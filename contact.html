@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030914">
+  <title>Contact | EGARDEE</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/logo.png" alt="EGARDEE"><span>EGARDEE</span></a>
+      <nav class="nav-links" id="navigation">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About Us</a>
+        <a href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+        <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-switch" id="langSwitch" aria-label="Change language">EN / CS</button>
+        <a href="contact.html" class="btn btn-gold nav-cta" data-i18n="nav.cta">Let's Talk</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-glow"></div>
+      <div class="container reveal">
+        <span class="eyebrow" data-i18n="contact.tag">GET IN TOUCH</span>
+        <h1 data-i18n-html="contact.title">Let's start a <em>conversation.</em></h1>
+        <p class="lead" data-i18n="contact.lead">
+          Whether you have a question about our solutions or would like
+          to explore a potential collaboration, we would be pleased to hear from you.
+        </p>
+        <div class="page-hero-index">EGARDEE / 04</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow" data-i18n="contact.infoTag">CONNECT WITH US</span>
+          <h2 data-i18n-html="contact.infoTitle">Every great idea begins with a <em>dialogue.</em></h2>
+          <p data-i18n="contact.infoText">
+            Tell us a little about your interests and requirements.
+            Our contact form will prepare your message in your preferred email application.
+          </p>
+          <div class="contact-detail">
+            <span class="detail-label" data-i18n="contact.emailLabel">EMAIL ENQUIRIES</span>
+            <a href="mailto:contact@egardee.com">contact@egardee.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label" data-i18n="contact.subjectLabel">AREAS OF INTEREST</span>
+            <p data-i18n="contact.subjectText">Image-based password protection, USB hardware encryption and business enquiries.</p>
+          </div>
+          <div class="contact-note">
+            <span>◇</span>
+            <p data-i18n="contact.note">
+              Your message is composed locally in your email application.
+              This website does not store your form submissions.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <div class="form-heading">
+            <span class="eyebrow" data-i18n="contact.formTag">SEND AN ENQUIRY</span>
+            <h3 data-i18n="contact.formTitle">How can we help?</h3>
+          </div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName" data-i18n="contact.name">Full name *</label>
+                <input id="fullName" name="name" type="text" autocomplete="name" required maxlength="120" placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder">
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="contact.email">Email address *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="company" data-i18n="contact.company">Company / Organization</label>
+              <input id="company" name="company" type="text" autocomplete="organization" maxlength="120" placeholder="Optional" data-i18n-placeholder="contact.optional">
+            </div>
+
+            <div class="form-field">
+              <label for="interest" data-i18n="contact.interest">Area of interest *</label>
+              <select id="interest" name="interest" required>
+                <option value="" data-i18n="contact.select">Select an option</option>
+                <option value="image" data-i18n="contact.imageOption">Image-based password protection</option>
+                <option value="usb" data-i18n="contact.usbOption">USB hardware encryption</option>
+                <option value="partnership" data-i18n="contact.partnerOption">Partnership / Business enquiry</option>
+                <option value="general" data-i18n="contact.generalOption">General enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message" data-i18n="contact.message">Your message *</label>
+              <textarea id="message" name="message" rows="6" required maxlength="5000" placeholder="Tell us about your enquiry..." data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+            </div>
+
+            <label class="checkbox-field">
+              <input type="checkbox" id="privacy" required>
+              <span data-i18n="contact.privacy">I understand that my email application will handle the message and its delivery.</span>
+            </label>
+
+            <button type="submit" class="btn btn-gold form-submit" data-i18n="contact.send">Open Email Application ↗</button>
+            <button type="button" id="gmailButton" class="btn btn-outline gmail-button" data-i18n="contact.gmail">Continue with Gmail ↗</button>
+
+            <p class="form-disclaimer" data-i18n="contact.disclaimer">
+              No message is sent automatically. Please review and send it from your email application.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-content reveal">
+        <span class="eyebrow" data-i18n="common.nextStep">THE NEXT STEP</span>
+        <h2 data-i18n-html="contact.ctaTitle">Explore a different approach to <em>protection.</em></h2>
+        <p data-i18n="contact.ctaText">Learn more about our software and hardware concepts.</p>
+        <a href="solutions.html" class="btn btn-gold" data-i18n="contact.ctaButton">View Solutions ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/logo.png" alt=""><span>EGARDEE</span></a>
+        <p data-i18n="footer.description">Security designed around what matters.</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.explore">Explore</h4>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About Us</a>
+        <a href="solutions.html" data-i18n="nav.solutions">Solutions</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.connect">Connect</h4>
+        <a href="mailto:info@egardee.com">info@egardee.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span class="current-year"></span> EGARDEE. ALL RIGHTS RESERVED.</span>
+      <span>PRECISION IN DIGITAL SECURITY</span>
+    </div>
+  </footer>
+</body>
+</html>
