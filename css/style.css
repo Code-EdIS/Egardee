@@ -107,7 +107,7 @@ p { color: var(--muted); }
 .site-header.scrolled { height: 72px; background: rgba(3,9,20,.97); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.brand img { width: 49px; height: 49px; object-fit: contain; }
+.brand img { width: 80px; height: auto; object-fit: contain; }
 .brand span {
   font-family: var(--font-display);
   font-size: 25px;
