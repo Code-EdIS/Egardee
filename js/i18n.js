@@ -16,7 +16,8 @@ const translations = {
     footer: {
       description: "Security designed around what matters.",
       explore: "Explore",
-      connect: "Connect"
+      connect: "Connect",
+      phone: "Phone"
     },
     home: {
       eyebrow: "THE FUTURE OF DIGITAL PROTECTION",
@@ -116,6 +117,7 @@ const translations = {
       infoTitle: "Every great idea begins with a <em>dialogue.</em>",
       infoText: "Tell us a little about your interests and requirements. Our contact form will prepare your message in your preferred email application.",
       emailLabel: "EMAIL ENQUIRIES",
+      phoneLabel: "PHONE",
       subjectLabel: "AREAS OF INTEREST",
       subjectText: "Image-based password protection, USB hardware encryption and business enquiries.",
       note: "Your message is composed locally in your email application. This website does not store your form submissions.",
@@ -160,7 +162,8 @@ const translations = {
     footer: {
       description: "Bezpečnost navržená pro to, na čem záleží.",
       explore: "Prozkoumat",
-      connect: "Spojte se s námi"
+      connect: "Spojte se s námi",
+      phone: "Telefon"
     },
     home: {
       eyebrow: "BUDOUCNOST DIGITÁLNÍ OCHRANY",
@@ -260,6 +263,7 @@ const translations = {
       infoTitle: "Každý skvělý nápad začíná <em>dialogem.</em>",
       infoText: "Napište nám něco o svých zájmech a požadavcích. Náš formulář připraví zprávu ve vaší preferované e-mailové aplikaci.",
       emailLabel: "E-MAILOVÉ DOTAZY",
+      phoneLabel: "TELEFON",
       subjectLabel: "OBLASTI ZÁJMU",
       subjectText: "Ochrana hesel pomocí obrázku, USB hardwarové šifrování a obchodní dotazy.",
       note: "Vaše zpráva se připravuje lokálně ve vaší e-mailové aplikaci. Tento web neukládá odeslané formuláře.",
